@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ChevronLeft, Info, X, Search, ArrowRight } from "lucide-react";
+import { ChevronLeft, Info, X, Search, ArrowRight, List } from "lucide-react";
 import { Link } from "react-router-dom";
 import IndonesiaMap from "../components/IndonesiaMap";
 import { getProvinceDetails } from "../services/provinceService";
+import { provinceData } from "../data/provinces";
 
 export default function Explore() {
   const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
   const [provinceDetails, setProvinceDetails] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isListOpen, setIsListOpen] = useState(false);
+  
+  const provinceNames = Object.keys(provinceData).sort();
 
   const handleProvinceClick = async (name: string) => {
     if (!name) return;
@@ -37,7 +41,7 @@ export default function Explore() {
         </div>
         <div className="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">
           <Link to="/explore" className="text-accent border-b-2 border-accent pb-1">Peta Sejarah</Link>
-          <span className="cursor-not-allowed opacity-50">Daftar Tokoh</span>
+          <Link to="/tokoh" className="hover:text-accent transition-colors">Daftar Tokoh</Link>
           <span className="cursor-not-allowed opacity-50">Linimasa</span>
         </div>
         <div className="w-32"></div> {/* Spacer to maintain layout balance */}
@@ -47,9 +51,17 @@ export default function Explore() {
         <div className="w-full h-full flex items-center justify-center p-8">
             <IndonesiaMap onProvinceClick={handleProvinceClick} activeProvince={selectedProvince} />
             
-            <div className="absolute bottom-10 right-10 flex items-center gap-3 bg-white px-5 py-3 rounded-full border border-stone-200 shadow-xl">
+            <button 
+              onClick={() => setIsListOpen(true)}
+              className="absolute top-10 right-10 flex items-center gap-3 bg-stone-900 text-white px-6 py-4 rounded-full shadow-2xl hover:bg-accent transition-colors group z-30"
+            >
+              <List size={18} className="group-hover:scale-110 transition-transform" />
+              <span className="text-[10px] font-bold uppercase tracking-widest">Daftar Provinsi</span>
+            </button>
+
+            <div className="absolute bottom-10 right-10 flex items-center gap-3 bg-white px-5 py-3 rounded-full border border-stone-200 shadow-xl z-20">
               <span className="w-3 h-3 rounded-full bg-accent animate-pulse"></span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-600">Pilih provinsi pada peta untuk informasi</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-stone-600">Pilih provinsi pada peta atau daftar</span>
             </div>
         </div>
       </main>
@@ -130,6 +142,56 @@ export default function Explore() {
               )}
             </motion.div>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {isListOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-stone-900/20 backdrop-blur-sm z-40"
+              onClick={() => setIsListOpen(false)}
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl z-50 flex flex-col border-l border-stone-200"
+            >
+              <div className="h-24 bg-stone-50 border-b border-stone-200 flex items-center justify-between px-8 shrink-0 relative overflow-hidden">
+                <div className="absolute inset-0 bg-accent/5 opacity-50"></div>
+                <div className="relative z-10">
+                  <h3 className="font-serif italic font-bold text-2xl text-stone-900">Daftar Provinsi</h3>
+                  <p className="text-[10px] uppercase font-bold tracking-widest text-stone-400 mt-1">{provinceNames.length} Wilayah NKRI</p>
+                </div>
+                <button 
+                  onClick={() => setIsListOpen(false)}
+                  className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-400 hover:text-stone-900 hover:bg-stone-100 transition-colors relative z-10"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+              <div className="flex-1 overflow-y-auto p-4 space-y-1">
+                {provinceNames.map((name) => (
+                  <button
+                    key={name}
+                    onClick={() => {
+                      setIsListOpen(false);
+                      handleProvinceClick(name);
+                    }}
+                    className="w-full text-left px-6 py-4 rounded-xl hover:bg-stone-50 border border-transparent hover:border-stone-100 transition-all flex items-center justify-between group"
+                  >
+                    <span className="font-sans font-bold text-sm text-stone-700 group-hover:text-accent transition-colors">{name}</span>
+                    <ArrowRight size={16} className="text-stone-300 group-hover:text-accent group-hover:translate-x-1 transition-all" />
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>

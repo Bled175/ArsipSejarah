@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import ProvinceDetail from "./pages/ProvinceDetail";
+import Figures from "./pages/Figures";
+import FigureDetail from "./pages/FigureDetail";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/province/:name" element={<ProvinceDetail />} />
+          <Route path="/tokoh" element={<Figures />} />
+          <Route path="/tokoh/:id" element={<FigureDetail />} />
         </Routes>
       </div>
     </Router>

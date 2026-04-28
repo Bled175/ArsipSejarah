@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, Landmark, Sparkles, MapPin, MessageCircle, X, Calendar, Maximize, Quote, Image as ImageIcon, Book, Map, Users, Building, TrendingUp, Music, Construction, Archive, Database, Compass, Users2, Landmark as GovIcon, LineChart, Tent, Hammer, FolderOpen, Info } from "lucide-react";
 import { getProvinceDetails } from "../services/provinceService";
 import AIChat from "../components/AIChat";
+import IndonesiaMap from "../components/IndonesiaMap";
 
 const SectionHeader = ({ icon: Icon, title, id }: { icon: any, title: string, id: string }) => (
   <div id={id} className="flex items-center gap-3 mb-8 pt-24 -mt-24">
@@ -95,49 +96,59 @@ export default function ProvinceDetail() {
                 {details.nama}
               </h1>
               
-              <div className="flex flex-wrap gap-4">
-                <div className="inline-flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-stone-200 shadow-sm">
-                   <MapPin size={18} className="text-accent" />
-                   <span className="text-sm font-serif italic text-stone-500">Ibukota: <span className="text-stone-900 font-bold not-italic ml-1">{details.ibukota}</span></span>
+              <div className="grid sm:grid-cols-2 gap-4 w-full">
+                <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                   <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center shrink-0">
+                     <MapPin size={18} className="text-accent" />
+                   </div>
+                   <div>
+                     <p className="text-[10px] uppercase font-bold tracking-widest text-stone-400">Ibukota</p>
+                     <p className="text-sm font-bold text-stone-900">{details.ibukota}</p>
+                   </div>
                 </div>
+                
                 {details.tahun_berdiri && (
-                  <div className="inline-flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-stone-200 shadow-sm">
-                     <Calendar size={18} className="text-accent" />
-                     <span className="text-sm font-serif italic text-stone-500">Dibentuk: <span className="text-stone-900 font-bold not-italic ml-1">{details.tahun_berdiri}</span></span>
+                  <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                     <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center shrink-0">
+                       <Calendar size={18} className="text-accent" />
+                     </div>
+                     <div>
+                       <p className="text-[10px] uppercase font-bold tracking-widest text-stone-400">Dibentuk</p>
+                       <p className="text-sm font-bold text-stone-900">{details.tahun_berdiri}</p>
+                     </div>
                   </div>
                 )}
+                
                 {details.luas_wilayah && (
-                  <div className="inline-flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-stone-200 shadow-sm">
-                     <Maximize size={18} className="text-accent" />
-                     <span className="text-sm font-serif italic text-stone-500">Luas: <span className="text-stone-900 font-bold not-italic ml-1">{details.luas_wilayah}</span></span>
+                  <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                     <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center shrink-0">
+                       <Maximize size={18} className="text-accent" />
+                     </div>
+                     <div>
+                       <p className="text-[10px] uppercase font-bold tracking-widest text-stone-400">Luas Wilayah</p>
+                       <p className="text-sm font-bold text-stone-900">{details.luas_wilayah}</p>
+                     </div>
                   </div>
                 )}
+                
                 {details.semboyan && (
-                  <div className="inline-flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-stone-200 shadow-sm w-full lg:w-auto">
-                     <Quote size={18} className="text-accent" />
-                     <span className="text-sm font-serif italic text-stone-500">Semboyan: <span className="text-stone-900 font-bold not-italic ml-1">{details.semboyan}</span></span>
+                  <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                     <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center shrink-0">
+                       <Quote size={18} className="text-accent" />
+                     </div>
+                     <div>
+                       <p className="text-[10px] uppercase font-bold tracking-widest text-stone-400">Semboyan</p>
+                       <p className="text-sm font-bold text-stone-900 line-clamp-1" title={details.semboyan}>{details.semboyan}</p>
+                     </div>
                   </div>
                 )}
               </div>
             </div>
             
-            <div className="w-full lg:w-[400px] aspect-[4/3] rounded-3xl overflow-hidden relative shadow-2xl border-4 border-white bg-stone-200 flex shrink-0 group">
-               {details.gambar_cover ? (
-                 <img 
-                   src={details.gambar_cover} 
-                   alt={`Pemandangan ${details.nama}`} 
-                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                   onError={(e) => {
-                     // Fallback if image is missing
-                     (e.target as HTMLImageElement).src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="%23d6d3d1"><rect width="100%" height="100%"/><text x="50%" y="50%" fill="%2378716c" font-family="sans-serif" font-size="14" text-anchor="middle" dy=".3em">Foto Belum Tersedia</text></svg>';
-                   }}
-                 />
-               ) : (
-                 <div className="w-full h-full flex flex-col items-center justify-center text-stone-400 gap-3">
-                   <ImageIcon size={40} />
-                   <span className="text-xs uppercase tracking-widest font-bold">Foto Tidak Ada</span>
-                 </div>
-               )}
+            <div className="w-full lg:w-[400px] aspect-[4/3] rounded-3xl overflow-hidden relative shadow-sm bg-stone-100 flex shrink-0 group">
+               <div className="w-full h-full transform origin-center transition-transform duration-1000 group-hover:scale-[1.05]">
+                 <IndonesiaMap activeProvince={details.nama} minimalMode={true} />
+               </div>
             </div>
           </header>
 
