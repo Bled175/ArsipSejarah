@@ -25,7 +25,7 @@ export default function Explore() {
   };
 
   return (
-    <div className="w-full max-w-[1200px] h-screen max-h-[800px] mx-auto bg-[#F7F3EF] flex flex-col font-sans text-stone-800 overflow-hidden relative shadow-2xl border-x border-stone-200">
+    <div className="w-full h-screen bg-[#F7F3EF] flex flex-col font-sans text-stone-800 overflow-hidden relative">
       <nav className="h-16 px-8 border-b border-stone-200 flex items-center justify-between bg-white z-20">
         <div className="flex items-center gap-3">
           <Link to="/" className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center text-white font-bold text-lg hover:bg-stone-900 transition-colors">
