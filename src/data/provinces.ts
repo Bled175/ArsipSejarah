@@ -1463,7 +1463,6 @@ export const provinceData: Record<string, ProvinceData> = {
   "sejarah": "Dikenal sebagai Bumi Lancang Kuning, Riau terbentuk tahun 1958. Riau memiliki sejarah panjang di era Kerajaan Siak Sri Indrapura.",
   "menarik": [
     "Istana Siak Sri Indrapura",
-    "Budaya pantun",
     "Sungai Kampar"
   ],
   "tahun_berdiri": "9 Agustus 1957",
