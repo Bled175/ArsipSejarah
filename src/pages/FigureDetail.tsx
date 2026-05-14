@@ -23,14 +23,15 @@ export default function FigureDetail() {
 
   return (
     <div className="min-h-screen bg-[#F7F3EF] flex flex-col font-sans selection:bg-accent/20">
-      <nav className="h-20 px-8 flex items-center justify-between bg-white border-b border-stone-200 sticky top-0 z-50">
-        <Link to="/tokoh" className="inline-flex items-center gap-3 text-stone-400 hover:text-stone-900 transition-colors group">
+      <nav className="h-20 px-6 md:px-8 flex items-center justify-between bg-white border-b border-stone-200 sticky top-0 z-50">
+        <Link to="/tokoh" className="inline-flex items-center gap-2 md:gap-3 text-stone-400 hover:text-stone-900 transition-colors group">
           <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-          <span className="text-[10px] uppercase font-bold tracking-[0.2em]">Daftar Tokoh</span>
+          <span className="hidden md:inline text-[10px] uppercase font-bold tracking-[0.2em]">Daftar Tokoh</span>
+          <span className="md:hidden text-[10px] uppercase font-bold tracking-[0.1em]">Kembali</span>
         </Link>
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center text-white font-bold">N</div>
-          <span className="font-serif text-xl font-bold italic text-stone-900">Arsip Nasional</span>
+        <div className="flex items-center gap-2 md:gap-3">
+          <div className="w-6 h-6 md:w-8 md:h-8 bg-accent rounded-sm flex items-center justify-center text-white font-bold text-xs md:text-base">N</div>
+          <span className="font-serif text-lg md:text-xl font-bold italic text-stone-900">Arsip Nasional</span>
         </div>
       </nav>
 
@@ -135,7 +136,7 @@ export default function FigureDetail() {
 
           <footer className="pt-16 border-t border-stone-200 flex flex-col md:flex-row items-center justify-between gap-8 text-stone-400 mt-20">
              <div className="text-[10px] font-bold uppercase tracking-[0.3em]">
-               Dokumentasi Terverifikasi • Republik Indonesia
+               &copy; 2026 npm artisan
              </div>
           </footer>
         </motion.div>

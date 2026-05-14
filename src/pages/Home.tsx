@@ -26,11 +26,11 @@ export default function Home() {
             </span>
           </div>
           
-          <h1 className="text-7xl md:text-9xl font-serif font-bold mb-8 tracking-tight leading-none italic text-stone-900">
-            Jejak <br /> <span className="text-accent underline decoration-4 underline-offset-8">Provinsi</span>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-bold mb-6 md:mb-8 tracking-tight leading-none italic text-stone-900">
+            Jejak <br className="md:hidden" /> <span className="text-accent underline decoration-4 underline-offset-8">Provinsi</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed font-sans font-medium">
+          <p className="text-base md:text-xl lg:text-2xl text-stone-600 mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed font-sans font-medium px-2 md:px-0">
             Dokumentasi digital sejarah pembentukan wilayah dan kekayaan budaya 38 provinsi di seluruh Nusantara.
           </p>
 
@@ -47,8 +47,8 @@ export default function Home() {
         </motion.div>
       </main>
 
-      <footer className="absolute bottom-8 w-full text-center text-[10px] tracking-[0.3em] text-stone-400 font-sans uppercase font-bold">
-        NKRI &copy; 2024 • Sejarah Wilayah Terintegrasi
+      <footer className="absolute bottom-6 w-full text-center text-[10px] tracking-[0.3em] text-stone-400 font-sans uppercase font-bold px-4">
+        &copy; 2026 npm artisan • Sejarah Wilayah Terintegrasi
       </footer>
     </div>
   );

@@ -31,20 +31,19 @@ export default function Explore() {
   return (
     <div className="w-full h-screen bg-[#F7F3EF] flex flex-col font-sans text-stone-800 overflow-hidden relative">
       <nav className="h-16 px-8 border-b border-stone-200 flex items-center justify-between bg-white z-20">
-        <div className="flex items-center gap-3">
-          <Link to="/" className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center text-white font-bold text-lg hover:bg-stone-900 transition-colors">
+        <div className="flex items-center gap-2 md:gap-3">
+          <Link to="/" className="w-6 h-6 md:w-8 md:h-8 bg-accent rounded-sm flex items-center justify-center text-white font-bold text-sm md:text-lg hover:bg-stone-900 transition-colors">
             N
           </Link>
-          <span className="font-serif text-2xl font-bold tracking-tight text-stone-900">
-            Nusantara<span className="text-accent underline decoration-2 underline-offset-4">Arsip</span>
+          <span className="font-serif text-lg md:text-2xl font-bold tracking-tight text-stone-900">
+            Nusantara<span className="hidden md:inline text-accent underline decoration-2 underline-offset-4">Arsip</span>
           </span>
         </div>
-        <div className="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">
-          <Link to="/explore" className="text-accent border-b-2 border-accent pb-1">Peta Sejarah</Link>
-          <Link to="/tokoh" className="hover:text-accent transition-colors">Daftar Tokoh</Link>
-          <span className="cursor-not-allowed opacity-50">Linimasa</span>
+        <div className="flex items-center gap-4 md:gap-8 text-[9px] md:text-[10px] font-bold uppercase tracking-[0.1em] md:tracking-[0.2em] text-stone-400">
+          <Link to="/explore" className="hidden md:block text-accent border-b-2 border-accent pb-1">Peta Sejarah</Link>
+          <Link to="/tokoh" className="bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-accent transition-colors shadow-md md:bg-transparent md:text-stone-400 md:shadow-none md:p-0 md:rounded-none md:hover:bg-transparent md:hover:text-accent">Daftar Tokoh</Link>
         </div>
-        <div className="w-32"></div> {/* Spacer to maintain layout balance */}
+        <div className="w-8 md:w-32"></div> {/* Spacer to maintain layout balance */}
       </nav>
 
       <main className="flex-1 flex flex-col items-center justify-center relative overflow-hidden bg-[#F1EDE9]">
@@ -66,12 +65,8 @@ export default function Explore() {
         </div>
       </main>
 
-      <footer className="h-10 bg-stone-900 text-[9px] text-stone-500 flex items-center px-8 justify-between font-bold uppercase tracking-[0.2em]">
-        <p>&copy; 2024 Arsip Nasional Nusantara - Sejarah NKRI</p>
-        <div className="flex gap-6">
-          <span className="hover:text-white cursor-pointer transition-colors">Repositori Publik</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Dokumentasi</span>
-        </div>
+      <footer className="h-10 bg-stone-900 text-[8px] md:text-[9px] text-stone-500 flex items-center px-4 md:px-8 justify-center font-bold uppercase tracking-[0.1em] md:tracking-[0.2em]">
+        <p>&copy; 2026 npm artisan</p>
       </footer>
 
       <AnimatePresence>
