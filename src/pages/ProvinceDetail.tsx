@@ -39,6 +39,7 @@ export default function ProvinceDetail() {
   const [details, setDetails] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     if (name) {
@@ -166,7 +167,8 @@ export default function ProvinceDetail() {
                      <li><a href="#sosbud" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3 border-b border-stone-50"><Tent size={14} /> 6. Sosial Budaya</a></li>
                      <li><a href="#infrastruktur" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3 border-b border-stone-50"><Hammer size={14} /> 7. Infrastruktur</a></li>
                      <li><a href="#arsip" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3 border-b border-stone-50"><FolderOpen size={14} /> 8. Arsip Terkait</a></li>
-                     <li><a href="#metadata" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3"><Info size={14} /> 9. Metadata</a></li>
+                     <li><a href="#galeri" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3 border-b border-stone-50"><ImageIcon size={14} /> 9. Galeri Foto</a></li>
+                     <li><a href="#metadata" className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.15em] text-stone-400 hover:text-accent transition-colors py-3"><Info size={14} /> 10. Metadata</a></li>
                   </ul>
                </nav>
             </aside>
@@ -279,8 +281,29 @@ export default function ProvinceDetail() {
                 </div>
               </section>
 
+              {details.galeri && details.galeri.length > 0 && (
+                <section>
+                  <SectionHeader id="galeri" icon={ImageIcon} title="9. Galeri Foto" />
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                    {details.galeri.map((img: string, idx: number) => {
+                      // Extract name from the filename for caption
+                      const filename = img.split('/').pop() || '';
+                      const caption = filename.replace(/\.(jpg|jpeg|png|webp)$/i, '').replace(/-/g, ' ');
+                      return (
+                        <div key={idx} className="bg-white border border-stone-100 p-3 rounded-2xl shadow-sm hover:shadow-md transition-shadow group cursor-zoom-in" onClick={() => setSelectedImage(img)}>
+                          <div className="aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-stone-100">
+                            <img src={img} alt={caption} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                          </div>
+                          <p className="text-[10px] uppercase font-bold tracking-[0.1em] text-stone-500 text-center">{caption}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+
               <section>
-                <SectionHeader id="metadata" icon={Info} title="9. Metadata Arsip" />
+                <SectionHeader id="metadata" icon={Info} title="10. Metadata Arsip" />
                 <div className="bg-stone-900 rounded-[2rem] p-8 text-white grid sm:grid-cols-2 md:grid-cols-4 gap-8">
                    <div>
                      <p className="text-[9px] uppercase tracking-[0.2em] text-stone-400 mb-2 font-bold">Sumber Arsip</p>
@@ -352,6 +375,35 @@ export default function ProvinceDetail() {
               </button>
               <AIChat contextTopic={details.nama} />
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-stone-900/90 backdrop-blur-sm p-4 md:p-8 cursor-zoom-out"
+          >
+            <button
+              onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+              className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors backdrop-blur-md"
+            >
+              <X size={24} />
+            </button>
+            <motion.img
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              src={selectedImage}
+              alt="Gambar diperbesar"
+              className="max-w-full max-h-full object-contain rounded-xl shadow-2xl cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            />
           </motion.div>
         )}
       </AnimatePresence>

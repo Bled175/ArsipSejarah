@@ -8,6 +8,7 @@ import AIChat from "../components/AIChat";
 export default function FigureDetail() {
   const { id } = useParams<{ id: string }>();
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const figure = figuresData.find(f => f.id === id);
 
@@ -78,7 +79,7 @@ export default function FigureDetail() {
             
             <div className="w-full lg:w-[350px] aspect-[3/4] rounded-3xl overflow-hidden relative shadow-2xl border-4 border-white bg-stone-100 flex shrink-0 group">
                {figure.gambar_foto ? (
-                 <img src={figure.gambar_foto} alt={figure.nama} className="w-full h-full object-cover" />
+                 <img src={figure.gambar_foto} alt={figure.nama} className="w-full h-full object-cover cursor-zoom-in" onClick={() => setSelectedImage(figure.gambar_foto!)} />
                ) : (
                  <div className="w-full h-full flex flex-col items-center justify-center text-stone-300">
                     <UserIcon size={64} className="mb-4 opacity-50" />
@@ -171,6 +172,35 @@ export default function FigureDetail() {
               </button>
               <AIChat contextTopic={figure.nama} />
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-stone-900/90 backdrop-blur-sm p-4 md:p-8 cursor-zoom-out"
+          >
+            <button
+              onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}
+              className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors backdrop-blur-md"
+            >
+              <X size={24} />
+            </button>
+            <motion.img
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              src={selectedImage}
+              alt="Gambar diperbesar"
+              className="max-w-full max-h-full object-contain rounded-xl shadow-2xl cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            />
           </motion.div>
         )}
       </AnimatePresence>

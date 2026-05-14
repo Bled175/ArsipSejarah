@@ -16,6 +16,7 @@ export interface ProvinceData {
   infrastruktur: { transportasi: string[]; pendidikan: string[]; kesehatan: string[] };
   arsip: { tokoh: string[]; dokumen: string[]; peristiwa: string[] };
   metadata_arsip: { sumber: string; tahun: string; jenis: string; status: string };
+  galeri?: string[];
 }
 
 export const provinceData: Record<string, ProvinceData> = {
@@ -120,7 +121,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Aceh/Kopi-Gayo.jpg",
+    "/images/provinces/Aceh/Masjid-jaya-Baiturrahman.jpg",
+    "/images/provinces/Aceh/Rumoh-Aceh.jpg",
+    "/images/provinces/Aceh/Tari-saman.jpg",
+    "/images/provinces/Aceh/Ulee-Balang.jpg"
+]
 },
   "Jawa Tengah": {
   "nama": "Jawa Tengah",
@@ -222,7 +230,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Jawa-Tengah/Candi-Borobudur.jpg",
+    "/images/provinces/Jawa-Tengah/Dataran-Tinggi-Dieng.jpg",
+    "/images/provinces/Jawa-Tengah/Jawi-Jangkep.jpg",
+    "/images/provinces/Jawa-Tengah/Kota-Lama-Semarang.jpg",
+    "/images/provinces/Jawa-Tengah/Rumah-Adat-Joglo.jpg"
+]
 },
   "Bengkulu": {
   "nama": "Bengkulu",
@@ -324,7 +339,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Bengkulu/Benteng-Marlborough.jpg",
+    "/images/provinces/Bengkulu/Bubungan-Lima.jpg",
+    "/images/provinces/Bengkulu/Melayu-Bengkulu.jpg",
+    "/images/provinces/Bengkulu/Rafflesia-Arnoldi.jpg",
+    "/images/provinces/Bengkulu/Rumah-Pengasingan.jpg"
+]
 },
   "Banten": {
   "nama": "Banten",
@@ -426,7 +448,13 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Banten/Masjid-Agung-Banten.jpg",
+    "/images/provinces/Banten/Pangsi.jpg",
+    "/images/provinces/Banten/Suku-Badut.jpg",
+    "/images/provinces/Banten/Taman-Nasional-Ujung-Kulon.jpg"
+]
 },
   "Kalimantan Barat": {
   "nama": "Kalimantan Barat",
@@ -530,7 +558,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Bangka-Belitung": {
   "nama": "Kepulauan Bangka Belitung",
@@ -632,7 +661,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Bangka-Belitung/Batu-Granit.jpg",
+    "/images/provinces/Bangka-Belitung/Paksian.jpg",
+    "/images/provinces/Bangka-Belitung/Pantai-Laskar-Pelangi.jpg",
+    "/images/provinces/Bangka-Belitung/Rumah-Panggung.jpg",
+    "/images/provinces/Bangka-Belitung/Sejarah-Pertambangan-Timah.jpg"
+]
 },
   "Bali": {
   "nama": "Bali",
@@ -734,7 +770,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Bali/Candi-Bentar.jpg",
+    "/images/provinces/Bali/Pantai-Nusa-Dua.jpg",
+    "/images/provinces/Bali/Payas-Agung.jpg",
+    "/images/provinces/Bali/Pura-Besakih.jpg",
+    "/images/provinces/Bali/Subak.jpg"
+]
 },
   "Jawa Timur": {
   "nama": "Jawa Timur",
@@ -838,7 +881,13 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Jawa-Timur/Gunung-Bromo.jpg",
+    "/images/provinces/Jawa-Timur/Kawah-Ijen.jpg",
+    "/images/provinces/Jawa-Timur/Pesa'an.jpg",
+    "/images/provinces/Jawa-Timur/Situs-Trowulan.jpg"
+]
 },
   "Kalimantan Selatan": {
   "nama": "Kalimantan Selatan",
@@ -938,7 +987,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Nusa Tenggara Timur": {
   "nama": "Nusa Tenggara Timur",
@@ -1041,7 +1091,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Nusa-Tenggara-Timur/Danau-Kelimutu.jpg",
+    "/images/provinces/Nusa-Tenggara-Timur/Mbaru-Niang.jpg",
+    "/images/provinces/Nusa-Tenggara-Timur/Taman-Nasional-Komodo.jpg",
+    "/images/provinces/Nusa-Tenggara-Timur/Tenun-Ikat.jpg",
+    "/images/provinces/Nusa-Tenggara-Timur/Wae-Rebo.jpg"
+]
 },
   "Sulawesi Selatan": {
   "nama": "Sulawesi Selatan",
@@ -1145,7 +1202,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Kepulauan Riau": {
   "nama": "Kepulauan Riau",
@@ -1247,7 +1305,13 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Kepulauan-Riau/Belah-Bubung.jpg",
+    "/images/provinces/Kepulauan-Riau/Pantai-Lagoi.jpg",
+    "/images/provinces/Kepulauan-Riau/Pulau-Penyengat.jpg",
+    "/images/provinces/Kepulauan-Riau/Pusat-Perdaganyan-Batam.jpg"
+]
 },
   "Irian Jaya Barat": {
   "nama": "Papua Barat",
@@ -1350,7 +1414,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Sumatera Utara": {
   "nama": "Sumatera Utara",
@@ -1455,7 +1520,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Sumatra-Utara/Danau-Toba.jpg",
+    "/images/provinces/Sumatra-Utara/Istana-Maimun.jpg",
+    "/images/provinces/Sumatra-Utara/Lompat-Batu-Nias.JPG",
+    "/images/provinces/Sumatra-Utara/Rumah-Bolon.jpg",
+    "/images/provinces/Sumatra-Utara/Ulos.jpg"
+]
 },
   "Riau": {
   "nama": "Riau",
@@ -1555,7 +1627,13 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Riau/Istana-Siak-Sri-Indrapura.jpg",
+    "/images/provinces/Riau/Kebaya-Labuh-dan-Teluk-Balanga.jpg",
+    "/images/provinces/Riau/Selaso-Jatuh-Tunggal.jpg",
+    "/images/provinces/Riau/Sungai-Kampar.jpg"
+]
 },
   "Sulawesi Utara": {
   "nama": "Sulawesi Utara",
@@ -1658,7 +1736,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Kalimantan Utara": {
   "nama": "Kalimantan Utara",
@@ -1761,7 +1840,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Maluku Utara": {
   "nama": "Maluku Utara",
@@ -1864,7 +1944,12 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Maluku-Utara/Baileo.jpg",
+    "/images/provinces/Maluku-Utara/Manteren-Lamo.jpg",
+    "/images/provinces/Maluku-Utara/Tidore.jpg"
+]
 },
   "Sumatera Barat": {
   "nama": "Sumatera Barat",
@@ -1964,7 +2049,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Sumatra-Barat/Bundo-Kanduang.jpg",
+    "/images/provinces/Sumatra-Barat/Jam-Gadang.jpg",
+    "/images/provinces/Sumatra-Barat/Lembah-Harau.jpg",
+    "/images/provinces/Sumatra-Barat/Rendang.jpg",
+    "/images/provinces/Sumatra-Barat/Tari-Piring.jpg"
+]
 },
   "Maluku": {
   "nama": "Maluku",
@@ -2067,7 +2159,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Maluku/Baileo.jpg",
+    "/images/provinces/Maluku/Baju-Cele.jpg",
+    "/images/provinces/Maluku/Benteng-Belgica.jpg",
+    "/images/provinces/Maluku/Pantai-Ora.jpg",
+    "/images/provinces/Maluku/Peninggalan-Sejarah.jpg"
+]
 },
   "Nusa Tenggara Barat": {
   "nama": "Nusa Tenggara Barat",
@@ -2170,7 +2269,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Nusa-Tenggara-Barat/Desa-Adat-Sade.jpg",
+    "/images/provinces/Nusa-Tenggara-Barat/Gunung-Rinjani.jpg",
+    "/images/provinces/Nusa-Tenggara-Barat/Istana-Dalam-Loka.jpg",
+    "/images/provinces/Nusa-Tenggara-Barat/Lambung.jpg",
+    "/images/provinces/Nusa-Tenggara-Barat/Sirkut-Mandalika.jpg"
+]
 },
   "Sulawesi Tenggara": {
   "nama": "Sulawesi Tenggara",
@@ -2273,7 +2379,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Sulawesi Tengah": {
   "nama": "Sulawesi Tengah",
@@ -2376,7 +2483,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Papua": {
   "nama": "Papua",
@@ -2481,7 +2589,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Jawa Barat": {
   "nama": "Jawa Barat",
@@ -2583,7 +2692,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Jawa-Barat/Angklung.jpg",
+    "/images/provinces/Jawa-Barat/Gedung-Sate.jpg",
+    "/images/provinces/Jawa-Barat/Kebaya-Sunda.jpg",
+    "/images/provinces/Jawa-Barat/Kesepuhan.jpg",
+    "/images/provinces/Jawa-Barat/Tangkuban-Perahu.jpg"
+]
 },
   "Kalimantan Timur": {
   "nama": "Kalimantan Timur",
@@ -2687,7 +2803,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Lampung": {
   "nama": "Lampung",
@@ -2789,7 +2906,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Lampung/Krakatau.jpg",
+    "/images/provinces/Lampung/Nuwo-Sesat.jpg",
+    "/images/provinces/Lampung/Pantai-Tanjung-Setia.jpg",
+    "/images/provinces/Lampung/Taman-Nasional-Way-Kambas.jpg",
+    "/images/provinces/Lampung/Tulang-Bawang.jpg"
+]
 },
   "Jakarta Raya": {
   "nama": "DKI Jakarta",
@@ -2893,7 +3017,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Gorontalo": {
   "nama": "Gorontalo",
@@ -2993,7 +3118,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Yogyakarta": {
   "nama": "DI Yogyakarta",
@@ -3092,7 +3218,15 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Yogyakarta/Bangsal-Kencono.jpg",
+    "/images/provinces/Yogyakarta/Candi-Prambanan.jpg",
+    "/images/provinces/Yogyakarta/Joglo-Situbondo.jpg",
+    "/images/provinces/Yogyakarta/Kraton.jpg",
+    "/images/provinces/Yogyakarta/Malioboro.jpg",
+    "/images/provinces/Yogyakarta/Surjan.jpg"
+]
 },
   "Sumatera Selatan": {
   "nama": "Sumatera Selatan",
@@ -3193,7 +3327,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Sumatra-Selatan/Aesan-Gede.jpg",
+    "/images/provinces/Sumatra-Selatan/Jembatan-Ampera.jpg",
+    "/images/provinces/Sumatra-Selatan/Limas.jpg",
+    "/images/provinces/Sumatra-Selatan/Pempekjpg.jpg",
+    "/images/provinces/Sumatra-Selatan/Sungai-Musi.jpg"
+]
 },
   "Sulawesi Barat": {
   "nama": "Sulawesi Barat",
@@ -3295,7 +3436,8 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
   "Jambi": {
   "nama": "Jambi",
@@ -3396,7 +3538,14 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": [
+    "/images/provinces/Jambi/Candi-Muaro-Jambi.jpg",
+    "/images/provinces/Jambi/Gunung-Kerinci.jpg",
+    "/images/provinces/Jambi/Kajang-Lako.jpg",
+    "/images/provinces/Jambi/Kurung-Tanggung.jpg",
+    "/images/provinces/Jambi/Suku-Anak-Dalam.jpg"
+]
 },
   "Kalimantan Tengah": {
   "nama": "Kalimantan Tengah",
@@ -3500,6 +3649,7 @@ export const provinceData: Record<string, ProvinceData> = {
     "tahun": "Abad ke-19 hingga Era Reformasi",
     "jenis": "Teks, Foto Sejarah, Audio Visual",
     "status": "Digitalisasi Bertahap Otoritas Lokal"
-  }
+  },
+  "galeri": []
 },
 };
