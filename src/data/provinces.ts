@@ -23,7 +23,7 @@ export const provinceData: Record<string, ProvinceData> = {
   "Aceh": {
   "nama": "Aceh",
   "ibukota": "Banda Aceh",
-  "sejarah": "Aceh merupakan titik awal penyebaran Islam di Indonesia. Dikenal dengan sebutan Serambi Mekkah, daerah ini memiliki otonomi khusus sejak dikeluarkannya UU No. 44 Tahun 1999 dan UU No. 11 Tahun 2006 (UUPA) pasca MoU Helsinki.",
+  "sejarah": "Aceh merupakan titik awal penyebaran Islam di Indonesia. Dikenal dengan sebutan Serambi Mekkah, daerah ini memiliki otonomi khusus sejak dikeluarkannya UU No. 24 Tahun 1956 & UU No. 11 Tahun 2006 (Pemerintahan Aceh).",
   "menarik": [
     "Masjid Raya Baiturrahman",
     "Tari Saman yang diakui UNESCO",
@@ -34,8 +34,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Pancacita (Lima Cita-cita)",
   "gambar_cover": "/images/provinces/aceh.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 24 Tahun 1956 & UU No. 11 Tahun 2006 (Pemerintahan Aceh)",
+    "makna_lambang": "Pancasila (bintang), keadilan (timbangan), kemakmuran (padi/kapas), dan kejayaan Islam/kebudayaan (kubah masjid & rencong)."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -144,8 +144,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Prasetya Ulah Sakti Bhakti Praja",
   "gambar_cover": "/images/provinces/jawa-tengah.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 10 Tahun 1950",
+    "makna_lambang": "Candi Borobudur melambangkan kemegahan budaya masa lalu, gunung berapi (Merapi) melambangkan kekuatan, serta bambu runcing melambangkan perjuangan."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -253,8 +253,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Sekundang Setungguan Seiya Sekata",
   "gambar_cover": "/images/provinces/bengkulu.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 9 Tahun 1967",
+    "makna_lambang": "Bunga Rafflesi Arnoldi melambangkan keunikan alam, bintang melambangkan Ketuhanan, serta cerana dan keris melambangkan adat istiadat yang dijunjung tinggi."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -362,8 +362,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Iman Taqwa",
   "gambar_cover": "/images/provinces/banten.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 23 Tahun 2000",
+    "makna_lambang": "Menara Masjid Agung Banten melambangkan iman dan ketakwaan, roda gigi melambangkan modernisasi/industri, serta gapura Kaibon melambangkan sejarah."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -470,8 +470,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Akcaya (Tak Kunjung Binasa)",
   "gambar_cover": "/images/provinces/kalimantan-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 25 Tahun 1956",
+    "makna_lambang": "Perisai persegi lima melambangkan Pancasila, Mandau dan perisai Dayak melambangkan kesiapsiagaan membela tanah air, serta tugu khatulistiwa sebagai ciri khas geografis."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -575,8 +575,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Serumpun Sebalai",
   "gambar_cover": "/images/provinces/bangka-belitung.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 27 Tahun 2000",
+    "makna_lambang": "Balok timah dan lada putih melambangkan kekayaan alam utama, sedangkan batu satam melambangkan keunikan geologi wilayah kepulauan ini."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -684,8 +684,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bali Dwipa Jaya",
   "gambar_cover": "/images/provinces/bali.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 64 Tahun 1958",
+    "makna_lambang": "Candi Bentar melambangkan keagamaan yang kuat, pura melambangkan ketakwaan, serta teratai (padma) melambangkan kesucian singgasana Tuhan."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -793,8 +793,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Jer Basuki Mawa Beya",
   "gambar_cover": "/images/provinces/jawa-timur.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 2 Tahun 1965",
+    "makna_lambang": "Tugu Pahlawan melambangkan jiwa kepahlawanan Arek-Arek Suroboyo, sedangkan candi bentar melambangkan keluhuran kebudayaan kuno."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -903,8 +903,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Waja Sampai Kaputing",
   "gambar_cover": "/images/provinces/kalimantan-selatan.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 25 Tahun 1956",
+    "makna_lambang": "Rumah adat Bubungan Tinggi melambangkan nilai budaya leluhur, waja sampai kaputing melambangkan tekad baja pantang menyerah sampai akhir."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1004,8 +1004,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Flobamora",
   "gambar_cover": "/images/provinces/nusa-tenggara-timur.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 64 Tahun 1958",
+    "makna_lambang": "Komodo melambangkan fauna purba yang langka dan tangguh, tombak/perisai melambangkan pertahanan, serta pohon beringin melambangkan persatuan."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1114,8 +1114,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Sipakatau",
   "gambar_cover": "/images/provinces/sulawesi-selatan.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 13 Tahun 1964",
+    "makna_lambang": "Perahu Pinisi melambangkan jiwa pelaut tangguh, benteng Somba Opu melambangkan sejarah kejayaan, serta padi/kapas melambangkan kemakmuran."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1219,8 +1219,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Berpancang Amanah, Bersauh Marwah",
   "gambar_cover": "/images/provinces/kepulauan-riau.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 25 Tahun 2002",
+    "makna_lambang": "Perahu bertongkah melambangkan sejarah maritim, bintang melambangkan ketakwaan, serta jembatan Barelang melambangkan kemajuan teknologi dan konektivitas."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1327,8 +1327,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Cintaku Negeriku",
   "gambar_cover": "/images/provinces/papua-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 45 Tahun 1999 & UU No. 21 Tahun 2001",
+    "makna_lambang": "Burung Kasuari melambangkan kekuatan dan kemandirian, perisai melambangkan perlindungan, serta menara minyak melambangkan kekayaan energi."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1418,7 +1418,7 @@ export const provinceData: Record<string, ProvinceData> = {
   "galeri": []
 },
   "Sumatera Utara": {
-  "nama": "Sumatera Utara",
+  "nama": "Sumatra Utara",
   "ibukota": "Medan",
   "sejarah": "Tanah Melayu Deli dan Batak ini memiliki sejarah panjang masa Kesultanan Deli.",
   "menarik": [
@@ -1431,8 +1431,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Tekun Berkarya, Hidup Sejahtera, Mulia Berbudaya",
   "gambar_cover": "/images/provinces/sumatera-utara.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 24 Tahun 1956",
+    "makna_lambang": "Berbentuk perisai oval. Padi dan kapas melambangkan kemakmuran, bukit barisan melambangkan keteguhan, serta bintang bersudut lima melambangkan Ketuhanan Yang Maha Esa."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1542,8 +1542,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bumi Lancang Kuning",
   "gambar_cover": "/images/provinces/riau.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 61 Tahun 1958",
+    "makna_lambang": "Perisai berbentuk jantung. Lancang Kuning (perahu layar) melambangkan kebesaran dan kedaulatan, serta rantai lingkaran melambangkan persatuan."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1649,8 +1649,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Si Tou Timou Tumou Tou",
   "gambar_cover": "/images/provinces/sulawesi-utara.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 13 Tahun 1964",
+    "makna_lambang": "Pohon kelapa melambangkan komoditas utama dan fleksibilitas, pala/cengkih melambangkan kekayaan rempah, serta ombak laut melambangkan wilayah bahari."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1753,8 +1753,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Benuanta",
   "gambar_cover": "/images/provinces/kalimantan-utara.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 22 Tahun 2012",
+    "makna_lambang": "Burung Enggang melambangkan keluhuran budi, perahu melambangkan sarana transportasi andalan, serta pita bertuliskan 'Benuanta' (wilayah kita)."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1857,8 +1857,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Marimoi Ngone Futuru",
   "gambar_cover": "/images/provinces/maluku-utara.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 46 Tahun 1999",
+    "makna_lambang": "Burung Bidadari melambangkan keindahan alam, bintang melambangkan ketakwaan, serta gunung berapi laut melambangkan topografi wilayah."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -1952,7 +1952,7 @@ export const provinceData: Record<string, ProvinceData> = {
 ]
 },
   "Sumatera Barat": {
-  "nama": "Sumatera Barat",
+  "nama": "Sumatra Barat",
   "ibukota": "Padang",
   "sejarah": "Rumah bagi suku Minangkabau dengan sistem kekerabatan matrilineal terbesar di dunia. Daerah ini melahirkan banyak bapak bangsa Indonesia.",
   "menarik": [
@@ -1965,8 +1965,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Tuah Sakato",
   "gambar_cover": "/images/provinces/sumatera-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 61 Tahun 1958",
+    "makna_lambang": "Rumah Gadang melambangkan kebudayaan Minangkabau, masjid melambangkan ketaatan beragama, dan gelombang laut melambangkan dinamika masyarakatnya."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2072,8 +2072,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Siwalima",
   "gambar_cover": "/images/provinces/maluku.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 20 Tahun 1958",
+    "makna_lambang": "Perisai berbentuk jantung. Cengkih dan pala melambangkan sejarah rempah dunia, serta tombak/perisai melambangkan jiwa ksatria Pattimura."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2182,8 +2182,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bumi Gora",
   "gambar_cover": "/images/provinces/nusa-tenggara-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 64 Tahun 1958",
+    "makna_lambang": "Menjangan (rusa) melambangkan keberanian, Gunung Rinjani melambangkan keteguhan, serta kubah melambangkan religiositas masyarakatnya."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2292,8 +2292,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bumi Anoa",
   "gambar_cover": "/images/provinces/sulawesi-tenggara.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 13 Tahun 1964",
+    "makna_lambang": "Kepala anoa melambangkan satwa endemik yang tangguh dan setia, sedangkan anyaman melambangkan persatuan kerajinan rakyat."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2396,8 +2396,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Nosarara Nosabatutu",
   "gambar_cover": "/images/provinces/sulawesi-tengah.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 13 Tahun 1964",
+    "makna_lambang": "Menara air (Sigi) melambangkan kemakmuran, buah kelapa melambangkan potensi daerah, serta perisai melambangkan perlindungan rakyat."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2500,8 +2500,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Karya Swadaya",
   "gambar_cover": "/images/provinces/papua.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 12 Tahun 1969 & UU No. 21 Tahun 2001 (Otsus)",
+    "makna_lambang": "Burung Cendrawasih melambangkan keindahan dan kebebasan, tugu peringatan melambangkan integrasi, serta perisai melambangkan pertahanan diri."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2606,8 +2606,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Gemah Ripah Repeh Rapih",
   "gambar_cover": "/images/provinces/jawa-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 11 Tahun 1950",
+    "makna_lambang": "Kujang (senjata tradisional) melambangkan keberanian Sunda, padi dan kapas melambangkan kesuburan, serta garis hijau bergelombang melambangkan gunung dan sungai."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2715,8 +2715,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Ruhui Rahayu",
   "gambar_cover": "/images/provinces/kalimantan-timur.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 25 Tahun 1956",
+    "makna_lambang": "Perisai pelindung, mandau, dan sumpit melambangkan kesiapan bela diri, minyak bumi dan kayu melambangkan kekayaan alam yang melimpah."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2820,8 +2820,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Sai Bumi Ruwa Jurai",
   "gambar_cover": "/images/provinces/lampung.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 14 Tahun 1964",
+    "makna_lambang": "Siger (mahkota pengantin wanita) melambangkan keagungan budaya, payung melambangkan perlindungan, serta lada melambangkan hasil bumi utama."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -2929,8 +2929,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Jaya Raya",
   "gambar_cover": "/images/provinces/jakarta.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 11 Tahun 1966 & UU No. 29 Tahun 2007 (Kekhususan)",
+    "makna_lambang": "Monas melambangkan keagungan dan perjuangan, pintu gerbang melambangkan keterbukaan kota, serta padi dan kapas melambangkan kemakmuran."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3034,8 +3034,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bumi Serambi Madinah",
   "gambar_cover": "/images/provinces/gorontalo.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 38 Tahun 2000",
+    "makna_lambang": "Benteng Otanaha melambangkan pertahanan, ketupat melambangkan keramahan, serta padi dan kapas melambangkan keadilan sosial."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3135,8 +3135,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Memayu Hayuning Bawana",
   "gambar_cover": "/images/provinces/yogyakarta.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 3 Tahun 1950 & UU No. 13 Tahun 2012 (Keistimewaan)",
+    "makna_lambang": "Tugu Golong Gilig melambangkan persatuan rakyat dan raja (manunggalings kawula gusti), dikelilingi padi dan kapas sebagai simbol kemakmuran."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3229,7 +3229,7 @@ export const provinceData: Record<string, ProvinceData> = {
 ]
 },
   "Sumatera Selatan": {
-  "nama": "Sumatera Selatan",
+  "nama": "Sumatra Selatan",
   "ibukota": "Palembang",
   "sejarah": "Palembang adalah pusat kemaharajaan Sriwijaya yang pernah menguasai perdagangan maritim se-Asia Tenggara pada abad ke-7 hingga 13.",
   "menarik": [
@@ -3242,8 +3242,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Bersatu Teguh",
   "gambar_cover": "/images/provinces/sumatera-selatan.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 25 Tahun 1959",
+    "makna_lambang": "Bunga teratai berdaun lima melambangkan kesucian dan Pancasila, bangunan beratap khas Palembang, serta batang hari yang subur melambangkan kemakmuran."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3350,8 +3350,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Mellete Diatonganan",
   "gambar_cover": "/images/provinces/sulawesi-barat.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 26 Tahun 2004",
+    "makna_lambang": "Perahu Sandeq melambangkan ketangguhan melaut dan kerja keras, sedangkan keris melambangkan kehormatan adat Mandar."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3453,8 +3453,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Sepucuk Jambi Sembilan Lurah",
   "gambar_cover": "/images/provinces/jambi.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 61 Tahun 1958",
+    "makna_lambang": "Keris Siginjai melambangkan kepahlawanan, masjid melambangkan ketaatan ibadah, serta angsa dua melambangkan asal-usul persatuan masyarakat Jambi."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
@@ -3561,8 +3561,8 @@ export const provinceData: Record<string, ProvinceData> = {
   "semboyan": "Isen Mulang (Pantang Mundur)",
   "gambar_cover": "/images/provinces/kalimantan-tengah.jpg",
   "informasi_umum": {
-    "dasar_hukum": "Undang-Undang Pembentukan Daerah Republik Indonesia",
-    "makna_lambang": "Melambangkan sejarah, kesejahteraan, persatuan, dan kekayaan alam daerah setempat."
+    "dasar_hukum": "UU No. 21 Tahun 1957",
+    "makna_lambang": "Rumah Betang melambangkan kehidupan gotong royong, Mandau dan sumpit melambangkan senjata tradisional, serta burung Tingang melambangkan kebesaran."
   },
   "geografis": {
     "koordinat": "Kawasan Strategis Kepulauan Nusantara",
