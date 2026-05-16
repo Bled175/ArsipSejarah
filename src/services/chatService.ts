@@ -6,7 +6,7 @@ Pengguna bertanya: "${question}"
 Tolong berikan jawaban yang informatif, akurat secara sejarah, dan menggunakan bahasa Indonesia yang baku namun ramah. Jika pertanyaannya tidak berkaitan dengan topik sejarah, ingatkan pengguna dengan sopan bahwa Anda adalah AI khusus yang berfokus pada sejarah Nusantara. Jawablah langsung tanpa menggunakan format Markdown yang berlebihan (jangan gunakan code block).`;
 
   try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
